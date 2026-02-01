@@ -45,3 +45,28 @@ Additionally, to learn more about Hono, visit the [Hono documentation](https://h
 
 Contributions are what make the open source community such a fantastic place to learn, inspire, and create. Any
 contributions you make are **greatly appreciated**
+
+## 🖼️ Farcaster Frames Integration
+
+### What are Frames?
+Frames are interactive mini-apps that run inside Farcaster posts, allowing users to interact without leaving their feed.
+
+### Frame Specification
+```html
+<!-- Required meta tags -->
+<meta property="fc:frame" content="vNext" />
+<meta property="fc:frame:image" content="https://..." />
+<meta property="fc:frame:button:1" content="View Noun" />
+<meta property="fc:frame:post_url" content="https://..." />
+```
+
+### Creating a New Frame
+1. Define the frame's initial state
+2. Create button handlers for interactions
+3. Generate dynamic images based on state
+4. Deploy to a public URL
+
+### Testing Frames
+- Use Warpcast Frame Validator
+- Test on testnet first
+- Check image dimensions (1.91:1 ratio)
